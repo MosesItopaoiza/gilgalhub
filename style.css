@@ -68,3 +68,57 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+
+.audio-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #181818;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-top: 1px solid #333;
+  z-index: 1000;
+}
+
+.track-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.track-art {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.track-title {
+  font-weight: bold;
+}
+
+.track-artist {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.seek-volume {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.seek-volume input[type="range"] {
+  cursor: pointer;
+}
