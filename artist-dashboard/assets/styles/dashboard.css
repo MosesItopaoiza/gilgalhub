@@ -88,3 +88,21 @@ body {
   padding: 0.8rem;
   border-bottom: 1px solid #333;
 }
+
+/* Highlight the Artist Dashboard link in the nav */
+nav a[href*="artist-dashboard"] {
+  color: #ff4d4d; /* Vibrant red to stand out */
+  font-weight: bold;
+  border: 2px solid #ff4d4d;
+  border-radius: 6px;
+  padding: 6px 12px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+nav a[href*="artist-dashboard"]:hover {
+  background-color: #ff4d4d;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.6);
+  transform: scale(1.05);
+}
