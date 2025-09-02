@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gigalhub Artist Dashboard</title>
+  <link rel="stylesheet" href="../assets/styles/dashboard.css" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">🎧 Gigalhub</div>
+    <nav>
+      <a href="#" class="active">Dashboard</a>
+      <a href="#">Upload Track</a>
+      <a href="#">My Tracks</a>
+      <a href="#">Earnings</a>
+      <a href="#">Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Dashboard Overview -->
+    <section class="overview">
+      <h1>Welcome, Artist</h1>
+      <div class="stats">
+        <div class="stat-card">
+          <h2>Streams</h2>
+          <p>0</p>
+        </div>
+        <div class="stat-card">
+          <h2>Earnings</h2>
+          <p>$0.00</p>
+        </div>
+        <div class="stat-card">
+          <h2>Followers</h2>
+          <p>0</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upload Form -->
+    <section class="upload-section">
+      <h2>Upload New Track</h2>
+      <form>
+        <label>Track File</label>
+        <input type="file" accept="audio/*" required />
+
+        <label>Title</label>
+        <input type="text" placeholder="Enter track title" required />
+
+        <label>Genre</label>
+        <select required>
+          <option value="">Select genre</option>
+          <option>Afrobeats</option>
+          <option>Hip-Hop</option>
+          <option>Gospel</option>
+          <option>Jazz</option>
+        </select>
+
+        <label>Artwork</label>
+        <input type="file" accept="image/*" />
+
+        <label>Description</label>
+        <textarea placeholder="Write a short description..."></textarea>
+
+        <button type="submit">Upload Track</button>
+      </form>
+    </section>
+
+    <!-- Track List -->
+    <section class="track-list">
+      <h2>My Tracks</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Plays</th>
+            <th>Earnings</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>No tracks yet</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+</body>
+</html>
