@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="assets/styles/style.css" />
 </head>
 <body>
-
   <!-- Header -->
   <header>
     <div class="logo">🎧 Gigalhub</div>
@@ -15,6 +14,8 @@
       <a href="#">Home</a>
       <a href="#">Browse</a>
       <a href="#">Playlists</a>
+      <!-- New Artist Dashboard link -->
+      <a href="artist-dashboard/dashboard.html">🎤 Artist Dashboard</a>
       <a href="#">Sign In</a>
     </nav>
   </header>
@@ -58,34 +59,29 @@
       <a href="#">Privacy</a>
     </nav>
   </footer>
+
   <!-- Audio Player -->
- <!-- Audio Player -->
-<div class="audio-player">
-  <div class="track-info">
-    <img src="assets/images/default-art.jpg" alt="Track Art" class="track-art">
-    <div>
-      <div class="track-title">Sample Track</div>
-      <div class="track-artist">Moses</div>
+  <div class="audio-player">
+    <div class="track-info">
+      <img src="assets/images/default-art.jpg" alt="Track Art" class="track-art">
+      <div>
+        <div class="track-title">Sample Track</div>
+        <div class="track-artist">Moses</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="prev">⏮</button>
+      <button id="play">▶</button>
+      <button id="next">⏭</button>
+    </div>
+    <div class="seek-volume">
+      <input type="range" id="seek" value="0" min="0" max="100">
+      <input type="range" id="volume" value="80" min="0" max="100">
     </div>
   </div>
-  <div class="controls">
-    <button id="prev">⏮</button>
-    <button id="play">▶</button>
-    <button id="next">⏭</button>
-  </div>
-  <div class="seek-volume">
-    <input type="range" id="seek" value="0" min="0" max="100">
-    <input type="range" id="volume" value="80" min="0" max="100">
-  </div>
-</div>
 
-<!-- Hidden audio element -->
-<audio id="audio" src="assets/music/sample.mp3"></audio>
-
-<script src="scripts/player.js"></script>
-
-</body>
-</html>
-
+  <!-- Hidden audio element -->
+  <audio id="audio" src="assets/music/sample.mp3"></audio>
+  <script src="scripts/player.js"></script>
 </body>
 </html>
