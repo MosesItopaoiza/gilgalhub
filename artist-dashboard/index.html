@@ -3,96 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gigalhub Artist Dashboard</title>
-  <link rel="stylesheet" href="../assets/styles/dashboard.css" />
+  <title>Artist Dashboard | Gigalhub</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <div class="logo">🎧 Gigalhub</div>
+  <!-- Header -->
+  <header>
+    <div class="logo">🎤 Artist Dashboard</div>
     <nav>
-      <a href="#" class="active">Dashboard</a>
-      <a href="#">Upload Track</a>
+      <a href="index.html">🏠 Back to Home</a>
       <a href="#">My Tracks</a>
       <a href="#">Earnings</a>
       <a href="#">Settings</a>
     </nav>
-  </aside>
+  </header>
 
-  <!-- Main Content -->
-  <main class="main-content">
-    <!-- Dashboard Overview -->
-    <section class="overview">
-      <h1>Welcome, Artist</h1>
-      <div class="stats">
-        <div class="stat-card">
-          <h2>Streams</h2>
-          <p>0</p>
-        </div>
-        <div class="stat-card">
-          <h2>Earnings</h2>
-          <p>$0.00</p>
-        </div>
-        <div class="stat-card">
-          <h2>Followers</h2>
-          <p>0</p>
-        </div>
+  <!-- Dashboard Content -->
+  <div class="dashboard">
+
+    <!-- Stats Overview -->
+    <div class="stats">
+      <div class="stat-card">
+        <h3>1,245</h3>
+        <p>Total Streams</p>
       </div>
-    </section>
+      <div class="stat-card">
+        <h3>320</h3>
+        <p>Monthly Listeners</p>
+      </div>
+      <div class="stat-card">
+        <h3>$540</h3>
+        <p>Earnings</p>
+      </div>
+    </div>
 
-    <!-- Upload Form -->
-    <section class="upload-section">
-      <h2>Upload New Track</h2>
-      <form>
-        <label>Track File</label>
-        <input type="file" accept="audio/*" required />
-
-        <label>Title</label>
-        <input type="text" placeholder="Enter track title" required />
-
-        <label>Genre</label>
-        <select required>
-          <option value="">Select genre</option>
-          <option>Afrobeats</option>
-          <option>Hip-Hop</option>
-          <option>Gospel</option>
-          <option>Jazz</option>
-        </select>
-
-        <label>Artwork</label>
-        <input type="file" accept="image/*" />
-
-        <label>Description</label>
-        <textarea placeholder="Write a short description..."></textarea>
-
-        <button type="submit">Upload Track</button>
-      </form>
-    </section>
-
-    <!-- Track List -->
-    <section class="track-list">
-      <h2>My Tracks</h2>
+    <!-- Recent Uploads -->
+    <div class="uploads">
+      <h2>Recent Uploads</h2>
       <table>
         <thead>
           <tr>
-            <th>Title</th>
+            <th>Track</th>
             <th>Plays</th>
-            <th>Earnings</th>
-            <th>Actions</th>
+            <th>Likes</th>
+            <th>Date Uploaded</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>No tracks yet</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
+            <td>Sample Song 1</td>
+            <td>500</td>
+            <td>120</td>
+            <td>Aug 20, 2025</td>
+          </tr>
+          <tr>
+            <td>Sample Song 2</td>
+            <td>320</td>
+            <td>80</td>
+            <td>Aug 15, 2025</td>
           </tr>
         </tbody>
       </table>
-    </section>
-  </main>
+    </div>
+
+    <!-- Upload New Track -->
+    <div class="upload-form">
+      <h2>Upload New Track</h2>
+      <form>
+        <input type="text" placeholder="Track Title" required />
+        <input type="file" accept="audio/*" required />
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Gigalhub. Built by Moses.</p>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </nav>
+  </footer>
 
 </body>
 </html>
