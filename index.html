@@ -9,28 +9,31 @@
 <body>
 
   <!-- Header -->
-  <header>
+  <header class="container">
     <div class="logo">🎧 Gigalhub</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Browse</a>
-      <a href="#">Playlists</a>
-      <a href="artistdashboardindex.html">🎤 Artist Dashboard</a>
-      <a href="#">Sign In</a>
+    <nav class="nav">
+      <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#">Browse</a>
+        <a href="#">Playlists</a>
+        <a href="artistdashboardindex.html">🎤 Artist Dashboard</a>
+        <a href="#">Sign In</a>
+      </div>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero container">
     <h1>Where Sound Meets Soul</h1>
     <p>Stream, share, and earn — music without limits.</p>
     <button>Play Now</button>
   </section>
 
   <!-- Featured Tracks -->
-  <section class="featured">
+  <section class="container">
     <h2>Trending Tracks</h2>
-    <div class="track-grid">
+    <div class="tracks">
       <div class="track-card">🎵 Track 1</div>
       <div class="track-card">🎵 Track 2</div>
       <div class="track-card">🎵 Track 3</div>
@@ -39,18 +42,18 @@
   </section>
 
   <!-- Genres -->
-  <section class="genres">
+  <section class="container">
     <h2>Genres</h2>
-    <div class="genre-grid">
-      <div class="genre-card">Afrobeats</div>
-      <div class="genre-card">Hip-Hop</div>
-      <div class="genre-card">Gospel</div>
-      <div class="genre-card">Jazz</div>
+    <div class="tracks">
+      <div class="track-card">Afrobeats</div>
+      <div class="track-card">Hip-Hop</div>
+      <div class="track-card">Gospel</div>
+      <div class="track-card">Jazz</div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="container">
     <p>© 2025 Gigalhub. Built by Moses.</p>
     <nav>
       <a href="#">About</a>
@@ -83,6 +86,23 @@
   <!-- Hidden audio element -->
   <audio id="audio" src="assets/music/sample.mp3"></audio>
 
+  <!-- Scripts -->
   <script src="scripts/player.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+
+      navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("show");
+        });
+      });
+    });
+  </script>
 </body>
 </html>
