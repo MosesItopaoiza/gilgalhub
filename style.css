@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 /* ===== Global Styles ===== */
+=======
+>>>>>>> 236908464fa2fca098224961db35518c22fccbda
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -25,6 +28,7 @@ nav a {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 /* Highlight Artist Dashboard link */
 nav a[href*="artist-dashboard"] {
   color: #ff4d4d;
@@ -43,6 +47,8 @@ nav a[href*="artist-dashboard"]:hover {
 }
 
 /* ===== Homepage Sections ===== */
+=======
+>>>>>>> 236908464fa2fca098224961db35518c22fccbda
 .hero {
   text-align: center;
   padding: 4rem 2rem;
@@ -63,6 +69,7 @@ nav a[href*="artist-dashboard"]:hover {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 .featured,
 .genres {
   padding: 2rem;
@@ -70,20 +77,34 @@ nav a[href*="artist-dashboard"]:hover {
 
 .track-grid,
 .genre-grid {
+=======
+.featured, .genres {
+  padding: 2rem;
+}
+
+.track-grid, .genre-grid {
+>>>>>>> 236908464fa2fca098224961db35518c22fccbda
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
 }
 
+<<<<<<< HEAD
 .track-card,
 .genre-card {
+=======
+.track-card, .genre-card {
+>>>>>>> 236908464fa2fca098224961db35518c22fccbda
   background: #1a1a1a;
   padding: 1rem;
   text-align: center;
   border-radius: 8px;
 }
 
+<<<<<<< HEAD
 /* ===== Footer ===== */
+=======
+>>>>>>> 236908464fa2fca098224961db35518c22fccbda
 footer {
   background: #1a1a1a;
   padding: 1rem 2rem;
@@ -92,7 +113,10 @@ footer {
   align-items: center;
 }
 
+<<<<<<< HEAD
 /* ===== Audio Player ===== */
+=======
+>>>>>>> 236908464fa2fca098224961db35518c22fccbda
 .audio-player {
   position: fixed;
   bottom: 0;
@@ -146,6 +170,7 @@ footer {
 .seek-volume input[type="range"] {
   cursor: pointer;
 }
+<<<<<<< HEAD
 
 /* ===== Artist Dashboard Specific ===== */
 .dashboard {
@@ -280,3 +305,5 @@ form button:hover {
     padding: 0.5rem 0;
   }
 }
+=======
+>>>>>>> 236908464fa2fca098224961db35518c22fccbda
