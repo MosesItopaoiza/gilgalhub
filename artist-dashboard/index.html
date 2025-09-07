@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artist Dashboard | Gigalhub</title>
+  <link rel="stylesheet" href="../assets/styles/style.css" />
+</head>
+<body>
+
+  <header class="container">
+    <div class="logo">🎤 Artist Dashboard</div>
+    <nav class="nav">
+      <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+      <div class="nav-links">
+        <a href="../index.html">🏠 Back to Home</a>
+        <a href="#">My Tracks</a>
+        <a href="#">Earnings</a>
+        <a href="#">Settings</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="dashboard container">
+    <div class="stats">
+      <div class="stat-card">
+        <h3>1,245</h3>
+        <p>Total Streams</p>
+      </div>
+      <div class="stat-card">
+        <h3>320</h3>
+        <p>Monthly Listeners</p>
+      </div>
+      <div class="stat-card">
+        <h3>$540</h3>
+        <p>Earnings</p>
+      </div>
+    </div>
+
+    <div class="uploads">
+      <h2>Recent Uploads</h2>
+      <table class="dashboard-table">
+        <thead>
+          <tr>
+            <th>Track</th>
+            <th>Plays</th>
+            <th>Likes</th>
+            <th>Date Uploaded</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sample Song 1</td>
+            <td>500</td>
+            <td>120</td>
+            <td>Aug 20, 2025</td>
+          </tr>
+          <tr>
+            <td>Sample Song 2</td>
+            <td>320</td>
+            <td>80</td>
+            <td>Aug 15, 2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="upload-form">
+      <h2>Upload New Track</h2>
+      <form>
+        <input type="text" placeholder="Track Title" required />
+        <input type="file" accept="audio/*" required />
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="container">
+    <p>© 2025 Gigalhub. Built by Moses.</p>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </nav>
+  </footer>
+</body>
+</html>

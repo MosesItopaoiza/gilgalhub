@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gigalhub</title>
+  <link rel="stylesheet" href="assets/styles/style.css"/> 
+</head>
+<body>
+
+  <header class="container">
+    <div class="logo">
+      <a href="index.html">🎧 Gigalhub</a>
+    </div>
+    <nav class="nav">
+      <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#">Browse</a>
+        <a href="#">Playlists</a>
+        <a href="artist-dashboard/index.html">🎤 Artist Dashboard</a>
+        <a href="#">Sign In</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <h1>Where Sound Meets Soul</h1>
+    <p>Stream, share, and earn — music without limits.</p>
+    <button>Play Now</button>
+  </section>
+
+  <section class="container">
+    <h2>Trending Tracks</h2>
+    <div class="track-grid">
+      <div class="track-card">🎵 Track 1</div>
+      <div class="track-card">🎵 Track 2</div>
+      <div class="track-card">🎵 Track 3</div>
+      <div class="track-card">🎵 Track 4</div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Genres</h2>
+    <div class="genre-grid">
+      <div class="genre-card">Afrobeats</div>
+      <div class="genre-card">Hip-Hop</div>
+      <div class="genre-card">Gospel</div>
+      <div class="genre-card">Jazz</div>
+    </div>
+  </section>
+
+  <footer class="container">
+    <p>© 2025 Gigalhub. Built by Moses.</p>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </nav>
+  </footer>
+
+  <div class="audio-player">
+    <div class="track-info">
+      <img src="assets/images/default-art.jpg" alt="Track Art" class="track-art">
+      <div>
+        <div class="track-title">Sample Track</div>
+        <div class="track-artist">Moses</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="prev">⏮</button>
+      <button id="play">▶</button>
+      <button id="next">⏭</button>
+    </div>
+    <div class="seek-volume">
+      <input type="range" id="seek" value="0" min="0" max="100">
+      <input type="range" id="volume" value="80" min="0" max="100">
+    </div>
+  </div>
+
+  <audio id="audio" src="assets/music/sample.mp3"></audio>
+  <script src="scripts/player.js"></script>
+</body>
+</html>
