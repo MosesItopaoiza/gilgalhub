@@ -28,12 +28,46 @@ Gigalhub is a digital sanctuary where artists from all backgrounds can upload, s
 
 Powered by:
 - HTML / CSS / JavaScript  
-- GitHub Pages for frontend hosting  
-- Firebase / Supabase for backend services  
+- Firebase for backend services (Firestore, Storage, Auth)  
 - Stripe for artist payouts  
 - IPFS (optional) for decentralized storage
 
 ---
 
-## 📂 Repo Structure
+## 🌐 Live Demo
 
+Check out the running instance of Gigalhub:  
+👉 [https://gilgalhub-8776b.web.app](https://gilgalhub-8776b.web.app)
+
+---
+
+## 📦 Repo Structure
+├── index.html 
+├── artist-dashboard/ 
+│ └── index.html 
+├── scripts/ 
+│ └── upload.js 
+├── assets/ 
+│ └── (images, audio, etc.) 
+├── firebase.json 
+└── README.md
+
+
+## ⚙️ Setup & Deployment
+
+### Prerequisites
+- Node.js and npm installed
+- Firebase CLI installed (`npm install -g firebase-tools`)
+- A Firebase project set up (e.g., `gilgalhub-8776b`)
+
+### Local Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MosesItopaoiza/gilgalhub.git
+   cd gilgalhub
+
+
+bash
+git add README.md
+git commit -m "Full README with setup, demo link, and license"
+git push origin main
