@@ -280,3 +280,16 @@ form button:hover {
     padding: 0.5rem 0;
   }
 }
+.logo {
+  display: block; /* Makes the <a> behave like a <div> */
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.logo:hover {
+  text-decoration: underline;
+  color: #ff6600; /* Optional hover effect */
+}
