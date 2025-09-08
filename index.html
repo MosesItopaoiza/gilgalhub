@@ -4,8 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gigalhub</title>
-<<<<<<< HEAD
   <link rel="stylesheet" href="assets/styles/style.css"/> 
+  
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+  import { getAuth } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
+  import { getFirestore } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js";
+  import { getStorage } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-storage.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBZgfvfk58lydp2i2qju3VOGEBf803bH-s",
+    authDomain: "gilgalhub-8776b.firebaseapp.com",
+    projectId: "gilgalhub-8776b",
+    storageBucket: "gilgalhub-8776b.firebasestorage.app",
+    messagingSenderId: "576901665420",
+    appId: "1:576901665420:web:6f2e9fb268ecba05cee1a9"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+  const storage = getStorage(app);
+
+  window.firebaseApp = { auth, db, storage };
+</script>
 </head>
 <body>
 
@@ -26,36 +48,12 @@
   </header>
 
   <section class="hero container">
-=======
-  <link rel="stylesheet" href="assets/styles/style.css" />
-</head>
-<body>
-
-  <!-- Header -->
-  <header>
-    <div class="logo">🎧 Gigalhub</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Browse</a>
-      <a href="#">Playlists</a>
-      <a href="#">Sign In</a>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
->>>>>>> 236908464fa2fca098224961db35518c22fccbda
     <h1>Where Sound Meets Soul</h1>
     <p>Stream, share, and earn — music without limits.</p>
     <button>Play Now</button>
   </section>
 
-<<<<<<< HEAD
   <section class="container">
-=======
-  <!-- Featured Tracks -->
-  <section class="featured">
->>>>>>> 236908464fa2fca098224961db35518c22fccbda
     <h2>Trending Tracks</h2>
     <div class="track-grid">
       <div class="track-card">🎵 Track 1</div>
@@ -65,12 +63,7 @@
     </div>
   </section>
 
-<<<<<<< HEAD
   <section class="container">
-=======
-  <!-- Genres -->
-  <section class="genres">
->>>>>>> 236908464fa2fca098224961db35518c22fccbda
     <h2>Genres</h2>
     <div class="genre-grid">
       <div class="genre-card">Afrobeats</div>
@@ -80,12 +73,7 @@
     </div>
   </section>
 
-<<<<<<< HEAD
   <footer class="container">
-=======
-  <!-- Footer -->
-  <footer>
->>>>>>> 236908464fa2fca098224961db35518c22fccbda
     <p>© 2025 Gigalhub. Built by Moses.</p>
     <nav>
       <a href="#">About</a>
@@ -94,7 +82,6 @@
       <a href="#">Privacy</a>
     </nav>
   </footer>
-<<<<<<< HEAD
 
   <div class="audio-player">
     <div class="track-info">
@@ -117,36 +104,5 @@
 
   <audio id="audio" src="assets/music/I surrender Hillsong worship.mp3"></audio>
   <script src="scripts/player.js"></script>
-=======
-  <!-- Audio Player -->
- <!-- Audio Player -->
-<div class="audio-player">
-  <div class="track-info">
-    <img src="assets/images/default-art.jpg" alt="Track Art" class="track-art">
-    <div>
-      <div class="track-title">Sample Track</div>
-      <div class="track-artist">Moses</div>
-    </div>
-  </div>
-  <div class="controls">
-    <button id="prev">⏮</button>
-    <button id="play">▶</button>
-    <button id="next">⏭</button>
-  </div>
-  <div class="seek-volume">
-    <input type="range" id="seek" value="0" min="0" max="100">
-    <input type="range" id="volume" value="80" min="0" max="100">
-  </div>
-</div>
-
-<!-- Hidden audio element -->
-<audio id="audio" src="assets/music/sample.mp3"></audio>
-
-<script src="scripts/player.js"></script>
-
-</body>
-</html>
-
->>>>>>> 236908464fa2fca098224961db35518c22fccbda
 </body>
 </html>

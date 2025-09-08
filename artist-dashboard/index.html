@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Artist Dashboard | Gigalhub</title>
   <link rel="stylesheet" href="../assets/styles/style.css" />
+  
+  <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+  import { getAuth } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
+  import { getFirestore } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js";
+  import { getStorage } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-storage.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBZgfvfk58lydp2i2qju3VOGEBf803bH-s",
+    authDomain: "gilgalhub-8776b.firebaseapp.com",
+    projectId: "gilgalhub-8776b",
+    storageBucket: "gilgalhub-8776b.firebasestorage.app",
+    messagingSenderId: "576901665420",
+    appId: "1:576901665420:web:6f2e9fb268ecba05cee1a9"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+  const storage = getStorage(app);
+
+  window.firebaseApp = { auth, db, storage };
+</script>
+
 </head>
 <body>
 
@@ -84,5 +108,7 @@
       <a href="#">Privacy</a>
     </nav>
   </footer>
+  <script type="module" src="../scripts/upload.js"></script>
+
 </body>
 </html>
